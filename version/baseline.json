@@ -1,5 +1,5 @@
 {
     "default": {
-        "namedtype": { "baseline": "7ccfe532376d1c78c6dd5bbd0222c65c91fe0f6e", "port-version": 0 }
+        "namedtype": { "baseline": "1.0.0", "port-version": 0 }
     }
 }
