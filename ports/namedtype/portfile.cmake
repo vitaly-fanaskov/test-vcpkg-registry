@@ -11,11 +11,10 @@ vcpkg_configure_cmake(
   PREFER_NINJA
 )
 vcpkg_install_cmake()
-# TODO: check whether we need it?
-# vcpkg_cmake_config_fixup()
-# vcpkg_fixup_cmake_targets()
+vcpkg_cmake_config_fixup(CONFIG_PATH "lib/cmake/")
 
 file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")
+file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug" "${CURRENT_PACKAGES_DIR}/lib")
 
 file(
   INSTALL "${SOURCE_PATH}/LICENSE"
