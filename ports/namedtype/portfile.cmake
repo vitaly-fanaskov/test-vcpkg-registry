@@ -11,7 +11,7 @@ vcpkg_configure_cmake(
   PREFER_NINJA
 )
 vcpkg_install_cmake()
-vcpkg_cmake_config_fixup(CONFIG_PATH "lib/cmake/")
+vcpkg_cmake_config_fixup(PACKAGE_NAME "NamedType" CONFIG_PATH "lib/cmake/")
 
 file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")
 file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug" "${CURRENT_PACKAGES_DIR}/lib")
